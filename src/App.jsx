@@ -1,25 +1,7 @@
-// import './App.css'
-// import { Button, useAuthenticator } from "@aws-amplify/ui-react";
-
-// function App() {
-
-//   const { signOut } = useAuthenticator();
-
-//   return (
-//     <div>
-//       <div className='m-2 flex justify-end'>
-//         <Button onClick={signOut}>Logout</Button>
-//       </div>
-//       <h1 className='text-3xl underline'>Fish Tank Manager</h1>
-//     </div>
-//   )
-// }
-
-// export default App
-
 import React, { useState, useMemo } from 'react';
 import * as Recharts from 'recharts';
-
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 // --- Mock Data ---
 // This data simulates the items you would fetch from your DynamoDB table.
 // It's structured to match your single-table design with different item types.
